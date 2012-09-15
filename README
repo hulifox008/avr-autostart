@@ -1,3 +1,5 @@
 This is my first AVR project. It is used to turn on my thin-client file server when power is applied.
 
 The AVR is powered by the standby 5.0V in thin-client. It'll simulate a "power button push", only if the power LED is turnned off.
+
+The code is assembled by "avra", then use "hex2bin" to convert to binary file.
