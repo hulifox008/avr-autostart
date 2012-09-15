@@ -1,7 +1,7 @@
-/* Pin connection:
-* PD5 is connected to power button. It's high when idle. Sending a low pulse will simulate a "power button push" to turn on the mainboard.
-* PD4 is connected to power LED. When the LED is off, this pin is low. When the LED is on, this pin is high. This will prevent PD5 to generate more "push" event.
-*/
+; Pin connection:
+; PD5 is connected to power button. It's high when idle. Sending a low pulse will simulate a "power button push" to turn on the mainboard.
+; PD4 is connected to power LED. When the LED is off, this pin is low. When the LED is on, this pin is high. This will prevent PD5 to generate more "push" event.
+;
 
 
 .DEVICE ATtiny2313
@@ -24,7 +24,7 @@
 .EQU    CLKPR   = 0x26
 .EQU    MCUSR   = 0x34
 
-/* we are not using any interrupt. Thus no need to have IVT here. */
+; we are not using any interrupt. Thus no need to have IVT here. 
 
 RESET:
 ;Turn off the wathch dog
